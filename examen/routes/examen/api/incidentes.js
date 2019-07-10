@@ -50,7 +50,45 @@ var incidentesColl = db.collection('incidentes');
         return res.status(200).json(rslt.ops[0]);
       });
     });//post
-   router.post
+   
+    router.put('/asign/:id', (req, res, next)=>{
+      var query = {"_id":new ObjectID(req.params.id)};
+      var update = {"$set":{"estado":"asignado", "fechaHoraAsignado":new Date().getTime()}};
+  
+      incidentesColl.updateOne(query, update, (err, rslt)=>{
+        if (err) {
+          console.log(err);
+          return res.status(404).json({ "error": "No se pudo modificar incidente" });
+        }
+        
+        return res.status(200).json(rslt);
+      })
+    });
+    router.put('/close/:id', (req, res, next)=>{
+      var query = {"_id":new ObjectID(req.params.id)};
+      var update = {"$set":{"estado":"cerrado", "fechaHoraCerrado":new Date().getTime()}};
+  
+      incidentesColl.updateOne(query, update, (err, rslt)=>{
+        if (err) {
+          console.log(err);
+          return res.status(404).json({ "error": "No se pudo modificar incidente" });
+        }
+        
+        return res.status(200).json(rslt);
+      })
+    }); // put
+  
+    router.delete('/:id', (req, res, next) => {
+      var query = { "_id": new ObjectID(req.params.id) };
+      incidentesColl.removeOne(query, (err, rslt) => {
+        if (err) {
+          console.log(err);
+          return res.status(404).json({ "error": "No se pudo eliminar incidente" });
+        }
+  
+        return res.status(200).json(rslt);
+      })
+    }); 
     
     return router;
 }

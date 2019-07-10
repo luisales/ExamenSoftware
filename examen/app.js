@@ -10,7 +10,7 @@ var usersRouter = require('./routes/users');
 function initApp(db){
 
 var app = express();
-var apiRouter = require('./routes/api')(db);
+var apiRouter = require('./routes/examen/api')(db);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -24,7 +24,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 
-app.use ('/api', apiRouter);
+app.use ('/examen/api', apiRouter);
 
 
 
