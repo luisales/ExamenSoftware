@@ -1,0 +1,563 @@
+{
+	"info": {
+		"_postman_id": "118a849f-7f43-4360-8831-bad2bd57f9e3",
+		"name": "ExamenUltim",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/api/incidentes",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "descripcion",
+							"value": "Caida",
+							"type": "text"
+						},
+						{
+							"key": "estado",
+							"value": "Registrado",
+							"type": "text"
+						},
+						{
+							"key": "tipo",
+							"value": "Incidente",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/incidentes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"incidentes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/incidentes/5d2592764740f5037cdc03a7",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "descripcion",
+							"value": "Caida",
+							"type": "text"
+						},
+						{
+							"key": "estado",
+							"value": "Registrado",
+							"type": "text"
+						},
+						{
+							"key": "tipo",
+							"value": "Incidente",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/incidentes/5d2592764740f5037cdc03a7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"incidentes",
+						"5d2592764740f5037cdc03a7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/incidentes/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "descripcion",
+							"value": "Caida",
+							"type": "text"
+						},
+						{
+							"key": "estado",
+							"value": "Registrado",
+							"type": "text"
+						},
+						{
+							"key": "tipo",
+							"value": "Incidente",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/incidentes/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"incidentes",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/examen/api/incidentes/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "descripcion",
+							"value": "Caida",
+							"type": "text"
+						},
+						{
+							"key": "estado",
+							"value": "Registrado",
+							"type": "text"
+						},
+						{
+							"key": "tipo",
+							"value": "Incidente",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/examen/api/incidentes/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"examen",
+						"api",
+						"incidentes",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/examen/api/incidentes/5d25910257bbef1cfc6d09f9",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "descripcion",
+							"value": "Caida",
+							"type": "text"
+						},
+						{
+							"key": "estado",
+							"value": "Registrado",
+							"type": "text"
+						},
+						{
+							"key": "tipo",
+							"value": "Incidente",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/examen/api/incidentes/5d25910257bbef1cfc6d09f9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"examen",
+						"api",
+						"incidentes",
+						"5d25910257bbef1cfc6d09f9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/examen/api/incidentes",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "descripcion",
+							"value": "Nueva",
+							"type": "text"
+						},
+						{
+							"key": "estado",
+							"value": "Registrado",
+							"type": "text"
+						},
+						{
+							"key": "tipo",
+							"value": "Incidente",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/examen/api/incidentes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"examen",
+						"api",
+						"incidentes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/examen/api/incidentes/5d25910257bbef1cfc6d09f9",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "descripcion",
+							"value": "Nueva",
+							"type": "text"
+						},
+						{
+							"key": "estado",
+							"value": "Registrado",
+							"type": "text"
+						},
+						{
+							"key": "tipo",
+							"value": "Incidente",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/examen/api/incidentes/5d25910257bbef1cfc6d09f9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"examen",
+						"api",
+						"incidentes",
+						"5d25910257bbef1cfc6d09f9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/examen/api/incidentes/asign/5d2590b057bbef1cfc6d09f7",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "descripcion",
+							"value": "Nueva",
+							"type": "text"
+						},
+						{
+							"key": "estado",
+							"value": "Registrado",
+							"type": "text"
+						},
+						{
+							"key": "tipo",
+							"value": "Incidente",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/examen/api/incidentes/asign/5d2590b057bbef1cfc6d09f7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"examen",
+						"api",
+						"incidentes",
+						"asign",
+						"5d2590b057bbef1cfc6d09f7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/examen/api/incidentes/close/5d2590b057bbef1cfc6d09f7",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "descripcion",
+							"value": "Nueva",
+							"type": "text"
+						},
+						{
+							"key": "estado",
+							"value": "Registrado",
+							"type": "text"
+						},
+						{
+							"key": "tipo",
+							"value": "Incidente",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/examen/api/incidentes/close/5d2590b057bbef1cfc6d09f7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"examen",
+						"api",
+						"incidentes",
+						"close",
+						"5d2590b057bbef1cfc6d09f7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/examen/api/incidentes/5d2590b057bbef1cfc6d09f7",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "descripcion",
+							"value": "Nueva",
+							"type": "text"
+						},
+						{
+							"key": "estado",
+							"value": "Registrado",
+							"type": "text"
+						},
+						{
+							"key": "tipo",
+							"value": "Incidente",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/examen/api/incidentes/5d2590b057bbef1cfc6d09f7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"examen",
+						"api",
+						"incidentes",
+						"5d2590b057bbef1cfc6d09f7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/examen/api/incidentes/5d2590b057bbef1cfc6d09f7",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "descripcion",
+							"value": "Nueva",
+							"type": "text"
+						},
+						{
+							"key": "estado",
+							"value": "Registrado",
+							"type": "text"
+						},
+						{
+							"key": "tipo",
+							"value": "Incidente",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/examen/api/incidentes/5d2590b057bbef1cfc6d09f7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"examen",
+						"api",
+						"incidentes",
+						"5d2590b057bbef1cfc6d09f7"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
